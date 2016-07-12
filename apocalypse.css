@@ -5,34 +5,37 @@ summary {
 
 body {
     font-family: "Lucida Sans Unicode", "Lucida Grande", Geneva, sans-serif;
-    max-width: 800px;
+    font-size: medium;
+    margin: 0px;
 }
 
+/* Format the <div> that represents the header. */
+header.SiteHeader {
+    padding: 5px;
+    padding-bottom: 2px;
+    background: #6B6E3F;
+    width: 854px;
+}
 
-/* Format the <div> that represents the header ( as a blue, bordered box). */
-header{
-    background-color: #7695FE;
-    border: thin #336699 solid;
-    padding: 10px;
+header.ArticleHeader {
     margin: 10px;
+    padding: 10px;
     text-align: center;
 }
-
-/* Format any <h1> headings in the header <div> ( that's thearticle title) */
-header h1 {
+/* Format any <h1> headings in the header <div> ( that's the article title) */
+header.ArticleHeader h2 {
     margin: 0px;
-    color: white;
     font-size: xx-large;
+    color: black;
 }
 
 /* Format the subtitle in the header <div>. */
-header .Teaser {
+header.ArticleHeader h3 {
     margin: 0px;
-    font-weight: bold;
 }
 
 /* Format the byline in the header <div>. */
-header .Byline {
+header.ArticleHeader p {
     font-style: italic;
     font-size: small;
     margin: 0px;
@@ -41,11 +44,10 @@ header .Byline {
 .Content {
     font-size: medium;
     font-family: Cambria, Cochin, Georgia, "Times New Roman", Times, serif;
-    padding-top: 20px;
-    padding-right: 50px;
-    padding-bottom: 5px;
-    padding-left: 50px;
-    line-height: 120%;
+    padding: 20px;
+    margin-left: 240px;
+    max-width: 700px;
+    min-width: 400px;
 }
 
 .Content .LeadIn {
@@ -54,7 +56,7 @@ header .Byline {
     font-variant: small-caps;
 }
 
-.Content h2 {
+.Content h3 {
     color: #24486C;
     margin-bottom: 2px;
     font-size: medium;
@@ -71,6 +73,7 @@ footer {
 
 footer .Disclaimer {
     font-style: italic;
+    font-size: small;
 }
 
 footer p {
@@ -111,4 +114,34 @@ figure figcaption {
 
 .PullQuote img {
     vertical-align: bottom;
+}
+
+aside.NavSidebar {
+    position: absolute;
+    top: 179px;
+    left: 0px;
+    padding: 5px 15px 0px 15px;
+    width: 203px;
+    min-height: 1500px;
+    background-color: #eee;
+    font-size: small;
+}
+aside.NavSidebar h2 {
+    color: #6B6E3F;
+    border-bottom: thin #6B6E3F solid;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+aside.NavSidebar ul {
+    padding-left: 15px;
+}
+
+aside.NavSidebar li {
+    padding-bottom: 3px;
+}
+
+aside.NavSidebar img {
+    margin-top: 10px;
+    border: white solid 4px;
 }
